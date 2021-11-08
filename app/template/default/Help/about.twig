@@ -1,0 +1,97 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+#}
+{% extends 'default_frame.twig' %}
+
+{% block main %}
+
+<div class="ec-role">
+    <div class="ec-pageHeader">
+        <h1>{{ 'front.about.title'|trans }}</h1>
+    </div>
+    
+    <div style="width:100%;align:justify">
+      
+      <div style="text-align:justify;width:70%;">
+      Cosmosmarket là cửa hàng mua sắm online tổng hợp chuyên cung ứng sỉ, lẻ các mặt hàng nhập khẩu từ Mỹ và Canada. Với tiêu chí lựa chọn “ Chất lượng vượt trội, giá cả cực sốc”.  <br />
+      Cosmosmarket mong muốn đem đến cho Quý khách hàng sự tin cậy và sự lựa chọn tuyệt vời nhất.  <br />
+      Chúng tôi cung cấp các mặt hàng thiết yếu hàng ngày, bao gồm đa dạng các ngành hàng từ quần áo, thực phẩm đến các mặt hàng tiêu dùng  của các thương hiệu nổi tiếng như: Kirland, Tide Ponds, Olay, OGX, Skechers, Tomy,... <br />
+      Đến với Cosmosmarket, khách hàng sẽ tiết kiệm được thời gian và chi phí để tìm kiếm những sản phẩm chất lượng, hợp túi tiền. <br />
+      Niềm tin của Quý khách hàng là động lực giúp chúng tôi không ngừng nỗ lực, cải tiến chất lượng dịch vụ và các tiện ích nhằm đáp ứng những nhu cầu ngày càng đa dạng Quý của khách hàng. <br />
+      <br /> Xin liên hệ với chúng tôi qua thông tin sau: <br />
+      </div>
+    </div>
+
+    <div class="ec-off1Grid">
+        <div class="ec-off1Grid__cell">
+            <div class="ec-borderedDefs">
+                {% if BaseInfo.shop_name|default is not empty %}
+                    <dl id="help_about_box__shop_name">
+                        <dt>
+                            <label class="ec-label">{{ 'common.shop_name'|trans }}</label>
+                        </dt>
+                        <dd>{{ BaseInfo.shop_name }}</dd>
+                    </dl>
+                {% endif %}
+              
+
+                {% if BaseInfo.postal_code|default is not empty %}
+                    <dl id="help_about_box__address">
+                        <dt>
+                            <label class="ec-label">{{ 'common.address'|trans }}</label>
+                        </dt>
+                        <dd>
+                            {{ format_address(BaseInfo.addr01, BaseInfo.addr02, BaseInfo.pref, BaseInfo.postal_code) }}
+                        </dd>
+                    </dl>
+                {% endif %}
+
+                {% if BaseInfo.phone_number|default is not empty %}
+                    <dl id="help_about_box__phone_number">
+                        <dt>
+                            <label class="ec-label">{{ 'common.phone_number'|trans }}</label>
+                        </dt>
+                        <dd>{{ BaseInfo.phone_number }}</dd>
+                    </dl>
+                {% endif %}
+
+                {% if BaseInfo.business_hour|default is not empty %}
+                    <dl id="help_about_box__business_hour">
+                        <dt>
+                            <label class="ec-label">{{ 'front.about.business_hour'|trans }}</label>
+                        </dt>
+                        <dd>{{ BaseInfo.business_hour }}</dd>
+                    </dl>
+                {% endif %}
+
+                {% if BaseInfo.good_traded|default is not empty %}
+                    <dl id="help_about_box__good_traded">
+                        <dt>
+                            <label class="ec-label">{{ 'front.about.good_traded'|trans }}</label>
+                        </dt>
+                        <dd>{{ BaseInfo.good_traded|nl2br }}</dd>
+                    </dl>
+                {% endif %}
+
+                {% if BaseInfo.message|default is not empty %}
+                    <dl id="help_about_box__message">
+                        <dt>
+                            <label class="ec-label">{{ 'front.about.message'|trans }}</label>
+                        </dt>
+                        <dd>{{ BaseInfo.message|nl2br }}</dd>
+                    </dl>
+                {% endif %}
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

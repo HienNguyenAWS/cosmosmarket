@@ -1,0 +1,3 @@
+1636359948
+eccube_entity_master_orderstatuscolor%255Beccube_entity_master_orderstatuscolor_eccube.entity.master.orderstatuscolor_4%255D%255B1%255D
+O:35:"Doctrine\ORM\Cache\EntityCacheEntry":2:{s:4:"data";a:3:{s:2:"id";i:4;s:4:"name";s:7:"#EEB128";s:7:"sort_no";i:2;}s:5:"class";s:37:"Eccube\Entity\Master\OrderStatusColor";}

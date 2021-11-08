@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{#
+This file is part of EC-CUBE
+
+Copyright(c) LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+#}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+
+<div  class="container" style="width:100%">
+		<div class="row" style="margin-bottom:20px; margin-top:15px; padding-left:10px;  padding-right: 20px;">
+			<div style="width:2%" ></div>
+			<div style="width:25%" >
+				<a href="http://cosmosmarket.vn/"><img src="{{asset('assets/img/top/logo.png') }}" style="width:100%"></a>
+			</div>
+			<div style="width:60%" >{{ include('Block/login.twig') }}</div>
+			<div style="width:13%" >{{ include('Block/cart.twig') }}</div>
+		</div>
+		<div class="row" style="margin-top: 10px; padding-right: 20px;">
+			<div style="width:10%" >{{ include('Block/nav_sp.twig') }}</div>
+			<div style="width:90%" >{{ render(path('block_search_product')) }}</div>
+		
+		</div>
+</div>
+
+
+                    <!--Start of Tawk.to Script-->
+                        <script type="text/javascript">
+                        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                        (function(){
+                        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                        s1.async=true;
+                        s1.src='https://embed.tawk.to/6185fcc46bb0760a49415ef1/1fjpm6o2o';
+                        s1.charset='UTF-8';
+                        s1.setAttribute('crossorigin','*');
+                        s0.parentNode.insertBefore(s1,s0);
+                        })();
+                        </script>
+                    <!--End of Tawk.to Script-->

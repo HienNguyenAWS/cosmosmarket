@@ -1,0 +1,46 @@
+{#
+This file is part of EC-CUBE
+
+Copyright(c) LOCKON CO.,LTD. All Rights Reserved.
+
+http://www.lockon.co.jp/
+
+For the full copyright and license information, please view the LICENSE
+file that was distributed with this source code.
+#}
+
+<div class="ec-role">
+    <div class="ec-newItemRole">
+        <div class="ec-newItemRole__list">
+            <div class="ec-newItemRole__listItem">
+                <div class="ec-newItemRole__listItemHeading ec-secHeading--tandem">
+                    <span class="ec-secHeading__en">Khuyến mãi</span>
+                    <span class="ec-secHeading__line"></span>
+                    <span class="ec-secHeading__ja">{{ 'front.block.new_item.title__ja'|trans }}</span>
+                    <a class="ec-inlineBtn--top" href="{{ url('product_list') }}?category_id=1">{{ 'front.block.new_item.more'|trans }}</a>
+                </div>
+            </div>
+            <div class="ec-newItemRole__listItem">
+                <a href="{{ url('product_detail', {'id': '12'}) }}">
+                    <img src="{{ asset('0829135908_612b303cdefec.jpg', 'save_image') }}">
+                    <p class="ec-newItemRole__listItemTitle">Nước hoa victoria secret very sexy 100ml</p>
+                    
+                </a>
+            </div>
+            <div class="ec-newItemRole__listItem">
+                <a href="{{ url('product_detail', {'id': '13'}) }}">
+                    <img src="{{ asset('0829142000_612b3520e92b9.jpg', 'save_image') }}">
+                    <p class="ec-newItemRole__listItemTitle">Combo Tắm mist lotion bath & body works</p>
+                    
+                </a>
+            </div>
+            <div class="ec-newItemRole__listItem">
+                <a href="{{ url('product_detail', {'id': '09'}) }}">
+                    <img src="{{ asset('0826130521_61272f21173f6.jpg' , 'save_image') }}">
+                    <p class="ec-newItemRole__listItemTitle">Nước rửa tay - Bath & Body Works (259ml)</p>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
